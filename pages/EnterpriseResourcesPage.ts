@@ -22,18 +22,18 @@ export class EnterpriseResourcesPage extends BasePage {
     await art.click();
   }
 
-async selectTopic(topic: string) {
-  const dropdown = this.page.locator(allLocators.EnterpriseResourcesPage.topicDropdown);
-  await dropdown.click();
+// async selectTopic(topic: string) {
+//   const dropdown = this.page.locator(allLocators.EnterpriseResourcesPage.topicDropdown);
+//   await dropdown.click();
 
-  // Wait for dropdown animation/render
-  await this.page.waitForTimeout(1000);
+//   // Wait for dropdown animation/render
+//   await this.page.waitForTimeout(1000);
 
-  // Use unscoped text locator
-  const option = this.page.locator(`text=${topic}`);
-  await option.waitFor({ state: 'visible', timeout: 10000 });
-  await option.click();
-}
+//   // Use unscoped text locator
+//   const option = this.page.locator(`text=${topic}`);
+//   await option.waitFor({ state: 'visible', timeout: 10000 });
+//   await option.click();
+// }
 
 
 

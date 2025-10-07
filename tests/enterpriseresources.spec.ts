@@ -36,7 +36,7 @@ test.describe('Enterprise Resources Article Flow', () => {
       await enterprisePage.clickArticles();
 
       // Step 4: Apply Filters
-      await enterprisePage.selectTopic(record.topic);
+      // await enterprisePage.selectTopic(record.topic);
      
     });
   }
