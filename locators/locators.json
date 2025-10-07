@@ -1,7 +1,8 @@
 {
-  "HomePage": {
-
-  },
+"HomePage": {
+    "forUniversities": "text=For Universities",
+    "forEnterprises": "text=For Enterprise"
+},
 
   "WebDevResultPage": {
 
@@ -12,6 +13,25 @@
   },
 
   "SalesFormPage": {
+
+    "firstName": "#FirstName",
+    "lastName": "#LastName",
+    "email": "#Email",
+    "phone": "#Phone",
+    "institutionType": "#Institution_Type__c",
+    "institutionTypeOption": "option[value='University/4 Year College']",
+    "institutionName": "#Company",
+    "jobRole": "#Title",
+    "jobRoleOption": "option[value='Student']",
+    "department": "#Department",
+    "departmentOption": "option[value='Continuing Education']",
+    "needs": "#What_the_lead_asked_for_on_the_website__c",
+    "needsOption": "option[value='Courses for myself']",
+    "country": "#Country",
+    "countryOption": "option[value='India']",
+    "submitButton": "button[type='submit']",
+   "errorMessage": "#ValidMsgEmail"
+
 
   },
 
@@ -48,7 +68,14 @@
   },
 
   "EnterpriseResourcesPage": {
-
+   "resources": "text=Resources",
+   "articles": "text=Articles",
+   "topicDropdown": "text=Topic",
+   "topicfilter": "text=Tech and Data",
+   "industryDropdown": "text=Industry Focus",
+   "industryCampus": "text=Campus",
+   "searchBox": "input[placeholder='Search by keyword']",
+   "articleGenAI": "text=Understanding Generative AI Risks: A Learning Leaders Guide to Ethical, Data, and Legal Conc"
   },
 
   "ArticleDetailsPage": {
@@ -76,6 +103,6 @@
   },
 
   "LearningPage": {
-    
+   
   }
 }
