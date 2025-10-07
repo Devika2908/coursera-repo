@@ -1,6 +1,8 @@
 {
   "HomePage": {
-
+    "welcomeMessage":"test=What brings you to Coursera today?",
+    "growRoleOption": "text=Grow in my current role" ,
+    "whatDoYouWantToLearn" :"input[placeholder='What do you want to learn?']"
   },
 
   "WebDevResultPage": {
@@ -16,10 +18,17 @@
   },
 
   "CurrentRolePage": {
+ "roleInput": "input[id^='cds-react-aria']",
+    "roleOption": "text=Automation Engineer",
+    "nextButton": "text=Next"
 
   },
 
   "SkillSelectPage": {
+    
+ "skill1": "text=Test Automation",
+    "skill2": "text=Agile Methodology",
+    "finishButton": "text=Finish"
 
   },
 
@@ -81,6 +90,17 @@
   },
 
   "LearningPage": {
-    
+    "courseResult": "text=Introduction to Agile Development and Scrum"
+  },
+   "AgileCoursePage": {
+
+    "courseTitle": "text=Introduction to Agile Development and Scrum",
+
+    "modules": "div[class='css-86zyin'] div a[class='cds-119 cds-113 cds-115 css-utge2k cds-142']",
+
+    "assignments": "text=13 assignments",
+
+    "courseraPlus": "text=Coursera Plus"
+
   }
 }
