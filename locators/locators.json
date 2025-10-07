@@ -1,7 +1,13 @@
 {
   "HomePage": {
+  "joinForFreeBtn": ".cds-149.cds-button-disableElevation.cds-button-secondary.css-jmnroe",
+  "nameInput": "input[aria-label='Full Name']",
+  "emailInput": "input[aria-label='Email']",  
+  "passwordInput": "input[aria-label='Password']",
+  "continueBtn": "//button[normalize-space()='Continue']",
+  "submitBtn": "//button[@type='submit']"
+},
 
-  },
 
   "WebDevResultPage": {
 
