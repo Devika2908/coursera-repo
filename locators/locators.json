@@ -36,16 +36,21 @@
   },
 
   "HelpPage": {
+    "paymentsAndSubscriptions": "text=Payments & subscriptions"
 
   },
 
   "PaymentsSubscriptionsPage": {
-
+"acceptedPaymentMethods": "text=Accepted payment methods"
   },
 
   "AcceptedPaymentMethodsPage": {
 
-  },
+
+  "paymentList": "//article[contains(@class,'content')]//ul[1]",
+    "paymentItems": "//article[contains(@class,'content')]//ul[1]/li"
+  }
+,
 
   "EnterpriseResourcesPage": {
 
