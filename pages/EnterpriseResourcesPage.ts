@@ -1,4 +1,4 @@
-import { Page } from '@playwright/test';
+import { Page,expect} from '@playwright/test';
 import { BasePage } from './BasePage';
 import allLocators from '../locators/locators.json';
 
@@ -22,14 +22,21 @@ export class EnterpriseResourcesPage extends BasePage {
     await art.click();
   }
 
- async selectTopic(topic: string) {
-    const dropdown = this.page.locator(allLocators.EnterpriseResourcesPage.topicDropdown);
-    await dropdown.click();
+async selectTopic(topic: string) {
+  const dropdown = this.page.locator(allLocators.EnterpriseResourcesPage.topicDropdown);
+  await dropdown.click();
 
-    // pick the first matching element inside the dropdown
-    const option = this.page.locator(`text=${topic}`);
-    await option.click();
+  // Wait for dropdown animation/render
+  await this.page.waitForTimeout(1000);
+
+  // Use unscoped text locator
+  const option = this.page.locator(`text=${topic}`);
+  await option.waitFor({ state: 'visible', timeout: 10000 });
+  await option.click();
 }
+
+
+
 
 
  

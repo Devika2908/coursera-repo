@@ -1,11 +1,39 @@
 {
+<<<<<<< HEAD
 "HomePage": {
     "forUniversities": "text=For Universities",
     "forEnterprises": "text=For Enterprise"
 },
+=======
+  "HomePage": {
+<<<<<<< HEAD
+    "searchBar": "#search-autocomplete-input",
+    "webDev": "div[aria-label='Popular Searches: web development.']",
+
+    "exploreButton": "button[aria-label='Explore our catalog'] span[class='cds-button-label']",
+    "exploreRolesViewAll": "(//a[@class='css-14uqn68'][normalize-space()='View all'])[1]"
+=======
+    "welcomeMessage":"test=What brings you to Coursera today?",
+    "growRoleOption": "text=Grow in my current role" ,
+    "whatDoYouWantToLearn" :"input[placeholder='What do you want to learn?']"
+>>>>>>> 397cb4360fd3f17a73b7ee1f7d166d1c5dbec010
+  },
+>>>>>>> 3c9148c480731868c503c6426cdc9372259338bc
 
   "WebDevResultPage": {
-
+    "english": "//input[@id='cds-react-aria-:R13amr65qkplaj9ml76:']",
+    "beginner": "//input[@id='cds-react-aria-:R13amr69qkplaj9ml76:']",
+    "courses": "//input[@id='cds-react-aria-:R25amr67qkplaj9ml76:']",
+    "topCourse1": {
+      "title": "a[id='cds-react-aria-:Rahkmbijasqdl9q:-product-card-title']",
+      "duration": "(//p[contains(text(),'Beginner · Course · 1 - 4 Weeks')])[1]",
+      "rating": "(//div[@id='cds-react-aria-:Rbiuqhkmbijasqdl9q:-aria-describedby-label'])[1]"
+    },
+    "topCourse2": {
+      "title": "a[id='cds-react-aria-:Raikmbijasqdl9q:-product-card-title']",
+      "duration": "(//p[contains(text(),'Beginner · Course · 1 - 4 Weeks')])[2]",
+      "rating": "(//div[@id='cds-react-aria-:Rbiuqikmbijasqdl9q:-aria-describedby-label'])[1]"
+    }
   },
 
   "LanguagePage": {
@@ -36,10 +64,17 @@
   },
 
   "CurrentRolePage": {
+ "roleInput": "input[id^='cds-react-aria']",
+    "roleOption": "text=Automation Engineer",
+    "nextButton": "text=Next"
 
   },
 
   "SkillSelectPage": {
+    
+ "skill1": "text=Test Automation",
+    "skill2": "text=Agile Methodology",
+    "finishButton": "text=Finish"
 
   },
 
@@ -48,11 +83,15 @@
   },
 
   "ExploreRolesPage": {
-
+    "showMore": "(//span[normalize-space()='Show 8 more'])[1]",
+    "frontendDev": "div[class='cds-9 css-0 cds-10'] li:nth-child(15)"
   },
 
   "FrontEndDevPage": {
-
+    "title": "div[class='css-kqd5ky'] h1[class='css-ylpfmv']",
+    "skills": "//div[@class='cds-154']//p[@class='css-kimdhf']//span[1]",
+    "medianSalary": "(//span[@class='rc-ReactPriceDisplay'])[2]",
+    "jobsAvailable": "(//b[@class='css-q7sefu'])[4]"
   },
 
   "HelpPage": {
@@ -103,6 +142,21 @@
   },
 
   "LearningPage": {
+<<<<<<< HEAD
    
+=======
+    "courseResult": "text=Introduction to Agile Development and Scrum"
+  },
+   "AgileCoursePage": {
+
+    "courseTitle": "text=Introduction to Agile Development and Scrum",
+
+    "modules": "div[class='css-86zyin'] div a[class='cds-119 cds-113 cds-115 css-utge2k cds-142']",
+
+    "assignments": "text=13 assignments",
+
+    "courseraPlus": "text=Coursera Plus"
+
+>>>>>>> 3c9148c480731868c503c6426cdc9372259338bc
   }
 }

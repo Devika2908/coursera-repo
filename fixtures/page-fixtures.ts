@@ -44,8 +44,6 @@ export class PageFixture {
     readonly iitRoorkeeTuitionFinancingPage: IITRoorkeeTuitionFinancingPage; 
     readonly learningPage: LearningPage; 
 
- 
-
     constructor(page: Page) { 
 
         this.page = page;
@@ -72,12 +70,9 @@ export class PageFixture {
 
     } 
 
- 
-
     get basePage(): Page { 
 
         return this.page; 
 
     } 
-
 } 
