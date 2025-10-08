@@ -20,7 +20,6 @@ const records = parse(csvContent, { columns: true, skip_empty_lines: true }) as 
 
 test.describe('Coursera Web Development Courses', () => {
 
-    // Loop through each search term in CSV
     for (const record of records) {
         const searchTerm = record.searchTerm;
 
