@@ -25,9 +25,14 @@ test.describe('Coursera Web Development Courses', () => {
   for (const record of records) {
     const searchTerm = record.searchTerm || '<<MISSING_SEARCH_TERM>>';
 
+<<<<<<< HEAD
     test(`Search, filter, and display top 2 course details for: ${searchTerm}`, async ({ pages }) => {
       const homePage = new HomePage(pages.page);
       const webDevPage = new WebDevResultPage(pages.page);
+=======
+    for (const record of records) {
+        const searchTerm = record.searchTerm;
+>>>>>>> 456cc04c6a229a291895c1c4d6171a6dba94959a
 
       await pages.page.goto('https://www.coursera.org/');
       await homePage.searchForTerm(searchTerm);

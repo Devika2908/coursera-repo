@@ -10,10 +10,20 @@ export class WebDevResultPage extends BasePage {
     this.page = page;
   }
 
+<<<<<<< HEAD
   async applyFilters() {
     const courseCheckbox = this.page.locator(allLocators.WebDevResultPage.courses);
     if (!(await courseCheckbox.isChecked())) {
       await courseCheckbox.click();
+=======
+        // Apply Beginner level filter
+        const beginnerCheckbox = this.page.locator(allLocators.WebDevResultPage.beginner);
+        if (!(await beginnerCheckbox.isChecked())) {
+            await beginnerCheckbox.check();
+        }
+
+        await this.page.waitForLoadState('networkidle');
+>>>>>>> 456cc04c6a229a291895c1c4d6171a6dba94959a
     }
 
     const englishCheckbox = this.page.locator(allLocators.WebDevResultPage.english);

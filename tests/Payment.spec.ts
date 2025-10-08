@@ -4,6 +4,7 @@ import { HelpPage } from '../pages/HelpPage';
 import { PaymentsSubscriptionsPage } from '../pages/PaymentsSubscriptionsPage';
 import { AcceptedPaymentMethodsPage } from '../pages/AcceptedPaymentMethodsPage';
 
+
 test('Print accepted payment methods', async ({ page }) => {
   const homePage = new HomePage(page);
   const helpPage = new HelpPage(page);
@@ -21,3 +22,5 @@ test('Print accepted payment methods', async ({ page }) => {
     console.log(`${index + 1}. ${method}`);
   });
 });
+
+

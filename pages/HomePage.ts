@@ -1,10 +1,24 @@
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+import { Page } from '@playwright/test';
+import { BasePage } from './BasePage';
+import allLocators from '../locators/locators.json';
+=======
+>>>>>>> 456cc04c6a229a291895c1c4d6171a6dba94959a
 
 import { Page } from '@playwright/test';
 import { BasePage } from './BasePage';
 import allLocators from '../locators/locators.json';
 
+<<<<<<< HEAD
+=======
+>>>>>>> 4ed0a96815dc2f6e3a8e12eed03215cbbefd4ec5
+>>>>>>> 456cc04c6a229a291895c1c4d6171a6dba94959a
 export class HomePage extends BasePage {
+<<<<<<< HEAD
+=======
   readonly page: Page;
   readonly joinForFreeBtn: string;
   readonly nameInput: string;
@@ -12,8 +26,6 @@ export class HomePage extends BasePage {
   readonly passwordInput: string;
   readonly continueBtn: string;
   readonly submitBtn: string;
-=======
-<<<<<<< HEAD
 export class HomePage extends BasePage {
     readonly page: Page;
 
@@ -46,6 +58,19 @@ async searchForTerm(term: string) {
   await this.page.locator(allLocators.HomePage.searchBar).fill(term);
   await this.page.locator(allLocators.HomePage.searchBar).press('Enter');
 }
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+export class HomePage extends BasePage {
+    
+    //Web Dev Course
+    async searchForTerm(term: string) {
+        await this.page.fill(allLocators.HomePage.searchBar, term);
+        await this.page.click(allLocators.HomePage.webDev);
+        
+    }
+>>>>>>> 456cc04c6a229a291895c1c4d6171a6dba94959a
 
     //Front End Course
     async clickExplore() {
@@ -67,40 +92,25 @@ export class HomePage extends BasePage{
 }
 =======
 
-
-
   readonly page: Page;
 >>>>>>> 93c17beb5f1f341bc73e7b79e7896324796c9bb6
+>>>>>>> 472566a7c6c98159276fcc5f2571ae2429a8426b
 
   constructor(page: Page) {
     super(page);
-    this.page = page;
+  }
+
+  async clickHelpLink() {
+    await this.page.getByRole('link', { name: 'Help' }).click();
+  }
+
+  async navigateToLanguageLearning() {
+    await this.page.goto('https://www.coursera.org/');
+    await this.page.getByTestId('megamenu-explore-button').click();
+    await this.page.getByTestId('megamenu-item~Language Learning')
+      .getByRole('link', { name: 'Language Learning' }).click();
+  }
 <<<<<<< HEAD
-    this.joinForFreeBtn = allLocators.HomePage.joinForFreeBtn;
-    this.nameInput = allLocators.HomePage.nameInput;
-    this.emailInput = allLocators.HomePage.emailInput;
-    this.passwordInput = allLocators.HomePage.passwordInput;
-    this.continueBtn = allLocators.HomePage.continueBtn;
-    this.submitBtn = allLocators.HomePage.submitBtn;
-  }
-
-  async clickJoinForFree() {
-    await this.page.locator(this.joinForFreeBtn).waitFor({ state: 'visible', timeout: 20000 });
-    await this.page.click(this.joinForFreeBtn);
-  }
-
-  async detectUIVersion(): Promise<'emailFirst' | 'fullForm'> {
-    const emailLocator = this.page.locator(this.emailInput);
-    const nameLocator = this.page.locator(this.nameInput);
-
-    if (await emailLocator.isVisible({ timeout: 5000 })) {
-      return 'emailFirst';
-    } else if (await nameLocator.isVisible({ timeout: 5000 })) {
-      return 'fullForm';
-    } else {
-      throw new Error('Unable to detect UI version');
-    }
-  }
 
   async fillEmail(email: string) {
     await this.page.locator(this.emailInput).waitFor({ state: 'visible', timeout: 20000 });
@@ -140,15 +150,18 @@ export class HomePage extends BasePage{
   }
 
   async selectGrowRole() {
+<<<<<<< HEAD
 >>>>>>> 543b7ddd9be79bbe6d724ea26f541a587747daac
  const btn = this.page.locator(allLocators.HomePage.growRoleOption);
+=======
+  const btn = this.page.locator(allLocators.HomePage.growRoleOption);
+>>>>>>> 456cc04c6a229a291895c1c4d6171a6dba94959a
     await btn.scrollIntoViewIfNeeded();
     await btn.click({ force: true });
 
   }
 
-  
- async searchCourse(courseName: string) {
+  async searchCourse(courseName: string) {
 
         const searchBox = this.page.locator(allLocators.HomePage.whatDoYouWantToLearn);
 
@@ -159,6 +172,13 @@ export class HomePage extends BasePage{
     }
 
 
+<<<<<<< HEAD
+=======
+
+    async clickBlog() {
+      await this.page.locator(allLocators.HomePage.blogPage).click();
+  }
+>>>>>>> 456cc04c6a229a291895c1c4d6171a6dba94959a
 }
 <<<<<<< HEAD
 
@@ -169,4 +189,10 @@ export class HomePage extends BasePage{
 >>>>>>> 3c9148c480731868c503c6426cdc9372259338bc
 >>>>>>> a9cc077c14c004871b727eee82116a2c1d4ea223
 >>>>>>> 93c17beb5f1f341bc73e7b79e7896324796c9bb6
+<<<<<<< HEAD
 >>>>>>> 543b7ddd9be79bbe6d724ea26f541a587747daac
+=======
+=======
+}
+>>>>>>> 4ed0a96815dc2f6e3a8e12eed03215cbbefd4ec5
+>>>>>>> 456cc04c6a229a291895c1c4d6171a6dba94959a
