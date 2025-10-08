@@ -13,6 +13,7 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
   testDir: './tests',
+  timeout: 60_000,
   /* Run tests in files in parallel */
   fullyParallel: true,
   timeout:60_000,
@@ -37,16 +38,19 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
+     
       use: { ...devices['Desktop Chrome'] },
     },
 
     {
       name: 'firefox',
+      timeout: 60000,
       use: { ...devices['Desktop Firefox'] },
     },
 
     {
       name: 'webkit',
+       timeout: 60000,
       use: { ...devices['Desktop Safari'] },
     },
 
