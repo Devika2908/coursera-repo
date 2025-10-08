@@ -4,8 +4,6 @@ import allLocators from '../locators/locators.json';
 
 export class HomePage extends BasePage{
 
-
-
   readonly page: Page;
 
   constructor(page: Page) {
@@ -14,14 +12,13 @@ export class HomePage extends BasePage{
   }
 
   async selectGrowRole() {
- const btn = this.page.locator(allLocators.HomePage.growRoleOption);
+  const btn = this.page.locator(allLocators.HomePage.growRoleOption);
     await btn.scrollIntoViewIfNeeded();
     await btn.click({ force: true });
 
   }
 
-  
- async searchCourse(courseName: string) {
+  async searchCourse(courseName: string) {
 
         const searchBox = this.page.locator(allLocators.HomePage.whatDoYouWantToLearn);
 
@@ -30,4 +27,10 @@ export class HomePage extends BasePage{
         await searchBox.press('Enter');
 
     }
+
+
+
+    async clickBlog() {
+      await this.page.locator(allLocators.HomePage.blogPage).click();
+  }
 }

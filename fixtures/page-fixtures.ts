@@ -15,9 +15,9 @@ import { EnterpriseResourcesPage } from '../pages/EnterpriseResourcesPage';
 import { ArticleDetailsPage } from '../pages/ArticleDetailsPage'; 
 import { OnlineDegreePage } from '../pages/OnlineDegreePage'; 
 import { IITRoorkeePage } from '../pages/IITRoorkeePage'; 
-import { IITRoorkeeAdmissionsPage } from '../pages/IITRoorkeeAdmissionsPage'; 
-import { IITRoorkeeAcademicsPage } from '../pages/IITRoorkeeAcademicsPage'; 
-import { IITRoorkeeTuitionFinancingPage } from '../pages/IITRoorkeeTuitionFinancingPage'; 
+import { IITRoorkeeAdmissionsPage } from '../pages/DataSciencePage'; 
+import { IITRoorkeeAcademicsPage } from '../pages/CourseraEngineeringPage'; 
+import { IITRoorkeeTuitionFinancingPage } from '../pages/RegressionPage'; 
 import { LearningPage } from '../pages/LearningPage'; 
  
 export class PageFixture { 

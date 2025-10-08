@@ -2,7 +2,11 @@
   "HomePage": {
     "welcomeMessage":"test=What brings you to Coursera today?",
     "growRoleOption": "text=Grow in my current role" ,
-    "whatDoYouWantToLearn" :"input[placeholder='What do you want to learn?']"
+    "whatDoYouWantToLearn" :"input[placeholder='What do you want to learn?']",
+
+
+
+    "blogPage":"//a[normalize-space()='Blog']"
   },
 
   "WebDevResultPage": {
@@ -97,5 +101,13 @@
 
     "courseraPlus": "text=Coursera Plus"
 
+  },
+
+  "BlogPage": {
+    "productNews":  "a[href='https://blog.coursera.org/product-news/']"
+  },
+
+  "ProductNewsPage" :{
+    "topStory": "(//div[@class='featured'])[1]"
   }
 }
