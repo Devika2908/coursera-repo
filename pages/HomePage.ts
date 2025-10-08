@@ -1,13 +1,9 @@
-<<<<<<< HEAD
+
 
 import { Page } from '@playwright/test';
-=======
-   import { Page } from '@playwright/test';
->>>>>>> a9cc077c14c004871b727eee82116a2c1d4ea223
 import { BasePage } from './BasePage';
 import allLocators from '../locators/locators.json';
 
-<<<<<<< HEAD
 export class HomePage extends BasePage {
     readonly page: Page;
 
@@ -29,17 +25,17 @@ export class HomePage extends BasePage {
     await forEnterprise.click();
     // wait for something specific on the new page
     await this.page.locator(allLocators.EnterpriseResourcesPage.resources).waitFor({ state: 'visible', timeout: 30000 });
+
 }
+//Web Dev Course
+    // async searchForTerm(term: string) {
+    //     await this.page.fill(allLocators.HomePage.searchBar, term);
+    //     await this.page.click(allLocators.HomePage.webDev);
+    // }
+async searchForTerm(term: string) {
+  await this.page.locator(allLocators.HomePage.searchBar).fill(term);
+  await this.page.locator(allLocators.HomePage.searchBar).press('Enter');
 }
-=======
-<<<<<<< HEAD
-export class HomePage extends BasePage {
-    
-    //Web Dev Course
-    async searchForTerm(term: string) {
-        await this.page.fill(allLocators.HomePage.searchBar, term);
-        await this.page.click(allLocators.HomePage.webDev);
-    }
 
     //Front End Course
     async clickExplore() {
@@ -50,25 +46,8 @@ export class HomePage extends BasePage {
         await this.page.locator(allLocators.HomePage.exploreRolesViewAll).click();
     }
 
-}
 
-=======
-export class HomePage extends BasePage{
-<<<<<<< HEAD
-    
-}
-=======
-
-
-
-  readonly page: Page;
-
-  constructor(page: Page) {
-    super(page);
-    this.page = page;
-  }
-
-  async selectGrowRole() {
+      async selectGrowRole() {
  const btn = this.page.locator(allLocators.HomePage.growRoleOption);
     await btn.scrollIntoViewIfNeeded();
     await btn.click({ force: true });
@@ -85,7 +64,9 @@ export class HomePage extends BasePage{
         await searchBox.press('Enter');
 
     }
+
+
 }
->>>>>>> 397cb4360fd3f17a73b7ee1f7d166d1c5dbec010
->>>>>>> 3c9148c480731868c503c6426cdc9372259338bc
->>>>>>> a9cc077c14c004871b727eee82116a2c1d4ea223
+
+
+

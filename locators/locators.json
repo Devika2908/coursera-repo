@@ -1,38 +1,36 @@
 {
-<<<<<<< HEAD
+
 "HomePage": {
     "forUniversities": "text=For Universities",
-    "forEnterprises": "text=For Enterprise"
-},
-=======
-  "HomePage": {
-<<<<<<< HEAD
-    "searchBar": "#search-autocomplete-input",
+    "forEnterprises": "text=For Enterprise",
+
+    "searchBar": "input[placeholder='What do you want to learn?']",
     "webDev": "div[aria-label='Popular Searches: web development.']",
 
     "exploreButton": "button[aria-label='Explore our catalog'] span[class='cds-button-label']",
-    "exploreRolesViewAll": "(//a[@class='css-14uqn68'][normalize-space()='View all'])[1]"
-=======
+    "exploreRolesViewAll": "(//a[@class='css-14uqn68'][normalize-space()='View all'])[1]",
+
     "welcomeMessage":"test=What brings you to Coursera today?",
     "growRoleOption": "text=Grow in my current role" ,
     "whatDoYouWantToLearn" :"input[placeholder='What do you want to learn?']"
->>>>>>> 397cb4360fd3f17a73b7ee1f7d166d1c5dbec010
-  },
->>>>>>> 3c9148c480731868c503c6426cdc9372259338bc
+},
+
+
+
 
   "WebDevResultPage": {
     "english": "//input[@id='cds-react-aria-:R13amr65qkplaj9ml76:']",
     "beginner": "//input[@id='cds-react-aria-:R13amr69qkplaj9ml76:']",
     "courses": "//input[@id='cds-react-aria-:R25amr67qkplaj9ml76:']",
     "topCourse1": {
-      "title": "a[id='cds-react-aria-:Rahkmbijasqdl9q:-product-card-title']",
+      "title": "a[aria-label='Introduction to HTML, CSS, & JavaScript, offered by IBM, COURSE']",
       "duration": "(//p[contains(text(),'Beginner · Course · 1 - 4 Weeks')])[1]",
-      "rating": "(//div[@id='cds-react-aria-:Rbiuqhkmbijasqdl9q:-aria-describedby-label'])[1]"
+      "rating": "(//div[@aria-label='Rating'])[1]"
     },
     "topCourse2": {
-      "title": "a[id='cds-react-aria-:Raikmbijasqdl9q:-product-card-title']",
+      "title": "a[aria-label='Introduction to Front-End Development, offered by Meta, COURSE']",
       "duration": "(//p[contains(text(),'Beginner · Course · 1 - 4 Weeks')])[2]",
-      "rating": "(//div[@id='cds-react-aria-:Rbiuqikmbijasqdl9q:-aria-describedby-label'])[1]"
+      "rating": "(//div[@aria-label='Rating'])[2]"
     }
   },
 
@@ -147,9 +145,7 @@
   },
 
   "LearningPage": {
-<<<<<<< HEAD
    
-=======
     "courseResult": "text=Introduction to Agile Development and Scrum"
   },
    "AgileCoursePage": {
@@ -162,6 +158,5 @@
 
     "courseraPlus": "text=Coursera Plus"
 
->>>>>>> 3c9148c480731868c503c6426cdc9372259338bc
   }
 }
