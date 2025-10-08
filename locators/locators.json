@@ -2,9 +2,28 @@
 
 "HomePage": {
     "forUniversities": "text=For Universities",
+<<<<<<< HEAD
     "forEnterprises": "text=For Enterprise",
 
     "searchBar": "input[placeholder='What do you want to learn?']",
+=======
+    "forEnterprises": "text=For Enterprise"
+},
+=======
+  "HomePage": {
+<<<<<<< HEAD
+  "joinForFreeBtn": ".cds-149.cds-button-disableElevation.cds-button-secondary.css-jmnroe",
+  "nameInput": "input[aria-label='Full Name']",
+  "emailInput": "input[aria-label='Email']",  
+  "passwordInput": "input[aria-label='Password']",
+  "continueBtn": "//button[normalize-space()='Continue']",
+  "submitBtn": "//button[@type='submit']"
+},
+
+=======
+<<<<<<< HEAD
+    "searchBar": "#search-autocomplete-input",
+>>>>>>> 543b7ddd9be79bbe6d724ea26f541a587747daac
     "webDev": "div[aria-label='Popular Searches: web development.']",
 
     "exploreButton": "button[aria-label='Explore our catalog'] span[class='cds-button-label']",
@@ -13,10 +32,17 @@
     "welcomeMessage":"test=What brings you to Coursera today?",
     "growRoleOption": "text=Grow in my current role" ,
     "whatDoYouWantToLearn" :"input[placeholder='What do you want to learn?']"
+<<<<<<< HEAD
 },
 
 
 
+=======
+>>>>>>> 397cb4360fd3f17a73b7ee1f7d166d1c5dbec010
+  },
+>>>>>>> 3c9148c480731868c503c6426cdc9372259338bc
+>>>>>>> 93c17beb5f1f341bc73e7b79e7896324796c9bb6
+>>>>>>> 543b7ddd9be79bbe6d724ea26f541a587747daac
 
   "WebDevResultPage": {
     "english": "//input[@id='cds-react-aria-:R13amr65qkplaj9ml76:']",
