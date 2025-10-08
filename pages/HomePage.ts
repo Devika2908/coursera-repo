@@ -49,6 +49,7 @@ export class HomePage extends BasePage {
     async searchForTerm(term: string) {
         await this.page.fill(allLocators.HomePage.searchBar, term);
         await this.page.click(allLocators.HomePage.webDev);
+        
     }
 
     //Front End Course
