@@ -23,7 +23,6 @@ export class WebDevResultPage extends BasePage{
             await beginnerCheckbox.check();
         }
 
-        // Wait for filters to apply
         await this.page.waitForLoadState('networkidle');
     }
 
