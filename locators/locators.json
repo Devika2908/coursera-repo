@@ -1,0 +1,147 @@
+{
+  "HomePage": {
+    "searchBar": "input[placeholder='What do you want to learn?']",
+    "webDev": "div[aria-label='Popular Searches: web development.']",
+
+    "exploreButton": "button[aria-label='Explore our catalog'] span[class='cds-button-label']",
+    "exploreRolesViewAll": "(//a[@class='css-14uqn68'][normalize-space()='View all'])[1]",
+
+    "welcomeMessage":"test=What brings you to Coursera today?", 
+    "growRoleOption": "text=Grow in my current role" , 
+    "whatDoYouWantToLearn" :"input[placeholder='What do you want to learn?']", 
+
+    "forUniversities": "text=For Universities",
+    "forEnterprises": "text=For Enterprise",
+
+    "helpLink": "role=link[name='Help']",
+    "exploreButton1": "data-testid=megamenu-explore-button",
+    "languageLearningLink": "data-testid=megamenu-item~Language Learning >> role=link[name='Language Learning']",
+
+    "blogLink": "role=link[name='Blog']",
+
+    "mastersDegreeLink": "role=link[name='Master\\'s Degrees']"
+  },
+
+  "WebDevResultPage": {
+    "english": "//input[@id='cds-react-aria-:R13amr65qkplaj9ml76:']",
+    "beginner": "//input[@id='cds-react-aria-:R13amr69qkplaj9ml76:']",
+    "courses": "//input[@id='cds-react-aria-:R25amr67qkplaj9ml76:']",
+    "topCourse1": {
+      "title": "a[aria-label='Introduction to HTML, CSS, & JavaScript, offered by IBM, COURSE']",
+      "duration": "(//p[contains(text(),'Beginner · Course · 1 - 4 Weeks')])[1]",
+      "rating": "(//div[@aria-label='Rating'])[1]"
+    },
+    "topCourse2": {
+      "title": "a[aria-label='Introduction to Front-End Development, offered by Meta, COURSE']",
+      "duration": "(//p[contains(text(),'Beginner · Course · 1 - 4 Weeks')])[2]",
+      "rating": "(//div[@aria-label='Rating'])[2]"
+    }
+ 
+  },
+
+  "LanguagePage": {
+    "expandLanguageFilterButton": "[data-testid='search-filter-group-Language'] [data-testid='expand-filter-items-button']",
+    "languageItems": "div[data-testid^='language:']",
+    "levelItems": "[data-testid^='productDifficultyLevel:']"
+  },
+
+  "SalesFormPage": {
+    "firstName": "#FirstName",
+    "lastName": "#LastName",
+    "email": "#Email",
+    "phone": "#Phone",
+    "institutionType": "#Institution_Type__c",
+    "institutionTypeOption": "option[value='University/4 Year College']",
+    "institutionName": "#Company",
+    "jobRole": "#Title",
+    "jobRoleOption": "option[value='Student']",
+    "department": "#Department",
+    "departmentOption": "option[value='Continuing Education']",
+    "needs": "#What_the_lead_asked_for_on_the_website__c",
+    "needsOption": "option[value='Courses for myself']",
+    "country": "#Country",
+    "countryOption": "option[value='India']",
+    "submitButton": "button[type='submit']",
+   "errorMessage": "#ValidMsgEmail"
+  },
+
+  "CurrentRolePage": {
+    "roleInput": "input[id^='cds-react-aria']", 
+    "roleOption": "text=Automation Engineer", 
+    "nextButton": "text=Next" 
+  },
+
+  "SkillSelectPage": {
+    "skill1": "text=Test Automation", 
+    "skill2": "text=Agile Methodology", 
+    "finishButton": "text=Finish" 
+  },
+
+  "ExploreRolesPage": {
+    "showMore": "(//span[normalize-space()='Show 8 more'])[1]",
+    "frontendDev": "div[class='cds-9 css-0 cds-10'] li:nth-child(15)"
+  },
+
+  "FrontEndDevPage": {
+    "title": "div[class='css-kqd5ky'] h1[class='css-ylpfmv']",
+    "skills": "//div[@class='cds-154']//p[@class='css-kimdhf']//span[1]",
+    "medianSalary": "(//span[@class='rc-ReactPriceDisplay'])[2]",
+    "jobsAvailable": "(//b[@class='css-q7sefu'])[4]"
+  },
+
+  "HelpPage": {
+    "paymentsAndSubscriptions": "text=Payments & subscriptions"
+  },
+
+  "PaymentsSubscriptionsPage": {
+   "acceptedPaymentMethods": "text=Accepted payment methods"
+  },
+
+  "AcceptedPaymentMethodsPage": {
+    "paymentList": "//article[contains(@class,'content')]//ul[1]",
+    "paymentItems": "//article[contains(@class,'content')]//ul[1]/li"
+
+  },
+
+  "EnterpriseResourcesPage": {
+   "resources": "text=Resources",
+   "articles": "text=Articles",
+   "topicDropdown": "text=Topic",
+   "topicfilter": "text=Tech and Data",
+   "industryDropdown": "text=Industry Focus",
+   "industryCampus": "text=Campus",
+   "searchBox": "input[placeholder='Search by keyword']",
+   "articleGenAI": "text=Understanding Generative AI Risks: A Learning Leaders Guide to Ethical, Data, and Legal Conc"
+  },
+
+  "LearningPage": {
+    "courseResult": "text=Introduction to Agile Development and Scrum" 
+  },
+
+  "AgileCoursePage": { 
+    "courseTitle": "text=Introduction to Agile Development and Scrum", 
+    "modules": "div[class='css-86zyin'] div a[class='cds-119 cds-113 cds-115 css-utge2k cds-142']", 
+    "assignments": "text=13 assignments", 
+    "courseraPlus": "text=Coursera Plus" 
+  },
+  
+  "BlogPage":
+  {
+    "productNewsLink" : "role=link[name='Product News']"
+  },
+  
+  "ProductNewsPage":
+  {
+    "topStory": "div.featured div.meta a"
+  },
+
+  "MasterDegreePage":{
+    "executiveMBALink": "a[aria-label^='Go to degree, Executive MBA']"
+  },
+ 
+  "ExecutiveMBAPage":
+  {
+    "admissionNotice": "//b[normalize-space()='Admission for Cohort 5 in March 2026']"
+  }
+
+}

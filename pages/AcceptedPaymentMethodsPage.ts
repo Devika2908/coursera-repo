@@ -1,10 +1,22 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+import { Page } from '@playwright/test';
+import { BasePage } from './BasePage';
+import allLocators from '../locators/locators.json';
 
-=======
->>>>>>> 27a6ffac8839950c8040da36045b933d8107ced2
->>>>>>> 32fc361abe1d520c274179652f4378094cc3cf2f
->>>>>>> 432261e4ec847629fc27ae82970ae5102b6fbd7a
+export class AcceptedPaymentMethodsPage extends BasePage {
+  constructor(page: Page) {
+    super(page);
+  }
+
+  async getPaymentMethods(): Promise<string[]> {
+    await this.page.waitForSelector(allLocators.AcceptedPaymentMethodsPage.paymentList, { state: 'visible', timeout: 90000 });
+    const listLocator = this.page.locator(allLocators.AcceptedPaymentMethodsPage.paymentItems);
+    const count = await listLocator.count();
+    const texts: string[] = [];
+    for (let i = 0; i < count; i++) {
+      const text = await listLocator.nth(i).innerText();
+      texts.push(text);
+    }
+
+    return texts;
+  }
+}
