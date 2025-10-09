@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { readCSVData } from '../utils/readCSV'; // Adjust path if needed
+import { readCSVData } from '../utils/readCSV';
 import { HomePage } from '../pages/HomePage';
 import { EnterpriseResourcesPage } from '../pages/EnterpriseResourcesPage';
 
